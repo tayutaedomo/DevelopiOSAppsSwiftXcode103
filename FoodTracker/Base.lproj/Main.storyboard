@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SSq-ih-Qsg">
-                                <rect key="frame" x="10" y="54" width="394" height="424.5"/>
+                                <rect key="frame" x="10" y="54" width="394" height="476.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuW-uE-aAz">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -50,6 +50,9 @@
                                             <outletCollection property="gestureRecognizers" destination="eJ7-Y2-oNZ" appends="YES" id="sCU-xM-5uv"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cEd-ia-oda" customClass="RaitingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="432.5" width="252" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="uNv-zb-4vN" secondAttribute="trailing" id="yMB-po-cd3"/>
@@ -68,6 +71,7 @@
                         <outlet property="mealNameLabel" destination="JuW-uE-aAz" id="yBk-Nj-BmA"/>
                         <outlet property="nameTextField" destination="uNv-zb-4vN" id="mg7-vp-dTd"/>
                         <outlet property="photoImageView" destination="hlc-ku-YpI" id="Ehz-ah-mGr"/>
+                        <outlet property="ratingControl" destination="cEd-ia-oda" id="a3d-Tw-YOC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
