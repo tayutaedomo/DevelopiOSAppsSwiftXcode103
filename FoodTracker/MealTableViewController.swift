@@ -175,17 +175,40 @@ class MealTableViewController: UITableViewController {
     }
 
     private func saveMeals() {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path)
+//        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(meals, toFile: Meal.ArchiveURL.path)
+//
+//        if isSuccessfulSave {
+//            os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
+//        }
+//        else {
+//            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+//        }
 
-        if isSuccessfulSave {
+        // See: https://stackoverflow.com/questions/53347426/ios-editor-bug-archiveddata-renamed
+        do {
+            let data = try NSKeyedArchiver.archivedData(withRootObject: meals, requiringSecureCoding: false)
+            try data.write(to: Meal.ArchiveURL)
             os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
         }
-        else {
+        catch {
             os_log("Failed to save meals...", log: OSLog.default, type: .error)
         }
     }
 
     private func loadMeals() -> [Meal]? {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
+//        return NSKeyedUnarchiver.unarchiveObject(withFile: Meal.ArchiveURL.path) as? [Meal]
+        if let nsData = NSData(contentsOf: Meal.ArchiveURL) {
+            do {
+                let data = Data(referencing:nsData)
+                if let loadedMeals = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Array<Meal> {
+                    return loadedMeals
+                }
+            }
+            catch {
+                print("Couldn't read file.")
+                return nil
+            }
+        }
+        return nil
     }
 }
