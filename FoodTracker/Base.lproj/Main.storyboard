@@ -87,7 +87,7 @@
         <!--Your Meals-->
         <scene sceneID="Dbr-t6-wsk">
             <objects>
-                <tableViewController id="EuG-Tr-29M" customClass="MailTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EuG-Tr-29M" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LyK-uO-53o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,7 @@
                                     <outlet property="nameLabel" destination="3uY-1Q-t7U" id="qwq-HZ-j9W"/>
                                     <outlet property="photoImageView" destination="oiW-gR-76P" id="Wms-Xo-l4d"/>
                                     <outlet property="ratingControl" destination="fxc-QB-aP3" id="Vgb-IQ-BGp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="da8-00-oJI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -175,10 +176,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvJ-zv-Z05" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024.6376811594205" y="20.758928571428569"/>
+            <point key="canvasLocation" x="986" y="400"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="da8-00-oJI"/>
+    </inferredMetricsTieBreakers>
 </document>
