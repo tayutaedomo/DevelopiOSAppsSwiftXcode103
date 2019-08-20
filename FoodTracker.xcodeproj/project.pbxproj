@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E602ADA3230B9D7000241F40 /* RaitingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E602ADA2230B9D7000241F40 /* RaitingControl.swift */; };
+		E602ADA3230B9D7000241F40 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E602ADA2230B9D7000241F40 /* RatingControl.swift */; };
 		E62989D5230BCCB60011D167 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62989D4230BCCB60011D167 /* Meal.swift */; };
 		E62989D7230BD7090011D167 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62989D6230BD7090011D167 /* MealTableViewCell.swift */; };
 		E62989D9230BDF980011D167 /* MailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62989D8230BDF980011D167 /* MailTableViewController.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E602ADA2230B9D7000241F40 /* RaitingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingControl.swift; sourceTree = "<group>"; };
+		E602ADA2230B9D7000241F40 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		E62989D4230BCCB60011D167 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E62989D6230BD7090011D167 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		E62989D8230BDF980011D167 /* MailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTableViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			children = (
 				E6BAABAB230A5AE70028AD0F /* AppDelegate.swift */,
 				E6BAABAD230A5AE70028AD0F /* MealViewController.swift */,
-				E602ADA2230B9D7000241F40 /* RaitingControl.swift */,
+				E602ADA2230B9D7000241F40 /* RatingControl.swift */,
 				E6BAABAF230A5AE70028AD0F /* Main.storyboard */,
 				E6BAABB2230A5AE90028AD0F /* Assets.xcassets */,
 				E6BAABB4230A5AE90028AD0F /* LaunchScreen.storyboard */,
@@ -211,7 +211,7 @@
 			files = (
 				E62989D5230BCCB60011D167 /* Meal.swift in Sources */,
 				E6BAABAE230A5AE70028AD0F /* MealViewController.swift in Sources */,
-				E602ADA3230B9D7000241F40 /* RaitingControl.swift in Sources */,
+				E602ADA3230B9D7000241F40 /* RatingControl.swift in Sources */,
 				E6BAABAC230A5AE70028AD0F /* AppDelegate.swift in Sources */,
 				E62989D9230BDF980011D167 /* MailTableViewController.swift in Sources */,
 				E62989D7230BD7090011D167 /* MealTableViewCell.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class RaitingControl: UIStackView {
+@IBDesignable class RatingControl: UIStackView {
 
     // MARK: Properties
     private var ratingButtons = [UIButton]()
@@ -97,7 +97,7 @@ import UIKit
             button.accessibilityLabel = "Set \(index + 1) star rating"
 
             // Setup the button action
-            button.addTarget(self, action: #selector(RaitingControl.ratingButtonTapped(button:)), for: .touchUpInside)
+            button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
 
             // Add the button to the stack
             addArrangedSubview(button)
